@@ -30,8 +30,21 @@ body {
     min-width: 100px;
     width: 150px;
     top: -55px;
+    left: calc(-50% - 30px);
+    padding: 10px 15px;
 }
 
 .imagenes-container .imagen:hover .nombre {
     display: flex;
+}
+
+.imagenes-container .imagen .nombre .text {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* elimina espacion en blanco */
+    margin: 0 auto; /* centra sin el width */
+    width: 150px;
+    text-align: center; /* centra solo con width */
+    box-sizing: border-box;
 }
